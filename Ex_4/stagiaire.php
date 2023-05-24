@@ -3,8 +3,8 @@ class Stagiaire{
     private $nom;
     private $notes = [];
 
-    public function getNomStagiaire($nom){ return $this->nom; }
-    public function getNotesStagiaire($notes){ return $this->notes; }
+    public function getNomStagiaire(){ return $this->nom; }
+    public function getNotesStagiaire(){ return $this->notes; }
 
     public function setNomStagiaire($nom){
         $this->nom = $nom;
@@ -18,7 +18,7 @@ class Stagiaire{
         $this->nom = $nom;
         $this->notes = $notes;
     }
-
+    
     public function calculerMoyenne(){
         $addition = 0;
         foreach($this->notes as $key => $value){
