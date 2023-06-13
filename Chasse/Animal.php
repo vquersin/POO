@@ -1,7 +1,5 @@
 <?php
 require_once 'Interface.php';
-require 
-include
 abstract class Animal implements IDeplacement{
    protected string $couleur; 
    protected int $nombrePatte;
